@@ -42,7 +42,7 @@ class App extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className="App">
           <CardList cards={this.state.cards}/>
       </div>
     )

@@ -8,8 +8,8 @@ class CardList extends React.Component {
 
     render(){
         return(
-            <div> 
-                {this.props.cards.reverse().map((item)=>(
+            <div className="cardList"> 
+                {this.props.cards.map((item)=>(
                     <GitHubCard key={item.id} object={item}/>
                 ))}
             </div>
