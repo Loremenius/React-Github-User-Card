@@ -9,7 +9,9 @@ class CardList extends React.Component {
     render(){
         return(
             <div> 
-
+                {this.props.cards.reverse().map((item)=>(
+                    <GitHubCard key={item.id} object={item}/>
+                ))}
             </div>
         )
     }
